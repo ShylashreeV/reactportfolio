@@ -1,0 +1,59 @@
+:root{
+    --yellow: #f9ca24;
+}
+.education_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.education{
+    background: #474adb;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid yellowgreen;
+    height: fit-content;
+    transition: all 400ms ease;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.education:hover{
+    background: transparent;
+    border-color: var(--yellow);
+    cursor: default;
+}
+.education_head{
+    background: var(--yellow);
+    padding: 1rem;
+    border-radius: 0 0 2rem 2rem;
+}
+.education_head h3{
+    font-size: 1rem;
+}
+.education_head h5{
+    color: white;
+}
+
+@media screen and (max-width:1024px) {
+    .education_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .education{
+        height: auto;
+    } 
+}
+
+@media screen and (max-width:700px) {
+    .education_container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    section{
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+    }
+    
+}
